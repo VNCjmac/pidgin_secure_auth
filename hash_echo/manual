@@ -1,4 +1,13 @@
 ### CUSTOM AUTHORIZATION PIDGIN ###
 ===================================
 
-In this method you both must have friar.py (A self made transformation library) for data transformation. Make sure that it is saved as /usr/lib/python3.10/friar.py .
+In this method you both must have friar.py (A self made transformation library) for data transformation. Make sure that it is saved as /usr/lib/python3.10/friar.py
+or the script wont work.
+
+This script takes in a word and the hashbrowns version 1-3 (hb1-3) as arguments. For authorization, the question can be any word / sentence and the answer
+will be the transformed data / output of echo.py.
+
+Example:
+python3 echo.py "Hello World" hb3 > enc.txt
+
+This will store the 'encrypted' data in a file name enc.txt which will be the answer to your received question from pidgin.

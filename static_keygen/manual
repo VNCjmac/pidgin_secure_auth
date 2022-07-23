@@ -1,0 +1,17 @@
+### CUSTOM AUTHORIZATION PIDGIN ###
+===================================
+
+One person in the conversation will run keygen.py. This will generate a list of 500 keys and
+values. You must send this file to everyone in the conversation. If this file is intercepted
+then this method of authorization is no longer secure.
+
+The person who asks the Question will run query.py. This will open the specified keyfile
+and extract a random key and value separated by two colons (::). The first side is the Key,
+the second is the Value. This is crucial for the authentication. When asking the question,
+You must enter the Key as the question. The Value (second half) is the answer.
+
+The person who has received the Question will run auth.py. This takes the Question (authkey)
+and the keyfile as arguments. This will run through each key and value in the keyfile and if
+there is any matching pair it will be printed separated by double colons (::). The first
+half is the Question asked by the user and the second half is the answer. This answer will 
+be the answer that guarantees your authentication

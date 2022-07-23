@@ -1,0 +1,4 @@
+### CUSTOM AUTHORIZATION PIDGIN ###
+===================================
+
+In this method you both must have friar.py (A self made transformation library) for data transformation. Make sure that it is saved as /usr/lib/python3.10/friar.py .
